@@ -1,4 +1,3 @@
-import java.util.Arrays;
 import java.util.ArrayList;
 
  public class Duplicates_W9A1_5 {
