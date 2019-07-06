@@ -17,7 +17,7 @@ public class Restaurant {
 		dishesList.add(new Dish(5, "Neer-Dosa", 50, 100));
 		dishesList.add(new Dish(10, "dish2", 500, 50));
 		dishesList.add(new Dish(4, "dish3", 350, 30));
-		dishesList.add(new Dish(4, "dish3", 250, 58));
+		dishesList.add(new Dish(3, "dish3", 250, 58));
 		
 		System.out.println("=================Welcome=====================");
 		System.out.println("Please choose from the below options");
