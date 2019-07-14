@@ -49,13 +49,13 @@ public class Client {
 		employeeList.add(new Employee(12, "employee1", 55, 20_000, Department.HR));
 		employeeList.add(new Employee(78, "employee2", 40, 40_000, Department.MARKETING));
 		employeeList.add(new Employee(23, "employee3", 42, 55_000, Department.SALES));
-		employeeList.add(new Employee(18, "employee4", 25, 60_000, Department.FINANCE));
-		employeeList.add(new Employee(18, "employee4", 28, 40_000, Department.SALES));
-		employeeList.add(new Employee(18, "employee4", 35, 30_000, Department.HR));
-		employeeList.add(new Employee(18, "employee4", 39, 80_000, Department.FINANCE));
-		employeeList.add(new Employee(18, "employee4", 28, 20_000, Department.MARKETING));
-		employeeList.add(new Employee(18, "employee4", 24, 45_000, Department.HR));
-		employeeList.add(new Employee(18, "employee4", 31, 70_000, Department.SALES));
+		employeeList.add(new Employee(19, "employee4", 25, 60_000, Department.FINANCE));
+		employeeList.add(new Employee(18, "employee5", 28, 40_000, Department.SALES));
+		employeeList.add(new Employee(40, "employee6", 35, 30_000, Department.HR));
+		employeeList.add(new Employee(98, "employee7", 39, 80_000, Department.FINANCE));
+		employeeList.add(new Employee(20, "employee8", 28, 20_000, Department.MARKETING));
+		employeeList.add(new Employee(53, "employee9", 24, 45_000, Department.HR));
+		employeeList.add(new Employee(28, "employee10", 31, 70_000, Department.SALES));
 		
 		System.out.println("1 -> Filter the employees having age less than the given input value");
 		System.out.println("2 -> Filter all the employees having age more than given input value");
