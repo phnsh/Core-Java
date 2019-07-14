@@ -100,6 +100,7 @@ public class Client {
 			employeeList
 			.stream()
 			.filter(emp -> emp.getSalary() > value && emp.getDepartment() == dept)
+			.map(Employee :: getName)
 			.forEach((emp) -> System.out.println(emp));
 			break;
 			
