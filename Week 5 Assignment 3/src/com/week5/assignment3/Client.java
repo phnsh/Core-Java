@@ -3,8 +3,11 @@ package com.week5.assignment3;
 import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
+import java.util.Optional;
 import java.util.Scanner;
 import java.util.function.Predicate;
+import java.util.stream.Collectors;
+import java.util.stream.Stream;
 
 import com.week5.assignment3.Employee.Department;
 
@@ -60,6 +63,7 @@ public class Client {
 		System.out.println("1 -> Filter the employees having age less than the given input value");
 		System.out.println("2 -> Filter all the employees having age more than given input value");
 		System.out.println("3 -> Filter all the employees having salary more than the given value and belong to the given department");
+		System.out.println("4 -> Print the name of the employees whose salary is greater than the input value and belong to the given department.");
 		int choice = scans.nextInt();
 		
 		switch(choice) {
@@ -92,12 +96,11 @@ public class Client {
 			value = scans.nextInt();
 			System.out.println("Enter the department: ");
 			dept = Department.valueOf(scans.next().toUpperCase());
-			List<Employee> empFilteredList = new ArrayList<>(); // = filterEmployees(employeeList, emp -> emp.getSalary() > value);
-			System.out.println(empFilteredList
-					.stream()
-					.filter(emp -> emp.getSalary() > value && dept == emp.getDepartment())
-					.map(Employee :: getDepartment)
-					);
+			
+			employeeList
+			.stream()
+			.filter(emp -> emp.getSalary() > value && emp.getDepartment() == dept)
+			.forEach((emp) -> System.out.println(emp));
 			break;
 			
 		default:
